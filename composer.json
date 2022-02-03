@@ -1,0 +1,24 @@
+{
+    "name": "vseager/snowdog-menu-luma",
+    "description": "Use Snowdog Menu with standard Luma menu for Magento",
+    "type": "magento2-module",
+    "version": "1.0.0",
+    "authors": [
+        {
+            "name": "vseager",
+            "email": "vseager@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "license": [
+        "MIT"
+    ],
+    "require": {
+        "snowdog/module-menu": "~2.18.0"
+    },
+    "autoload": {
+        "files": [
+            "registration.php"
+        ]
+    }
+}
