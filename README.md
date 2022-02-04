@@ -9,3 +9,9 @@ Supports the following node types:
 * CMS Page Link
 * Custom URL
 * Category Child
+
+## Installation
+
+```
+composer require vseager/magento2-snowdog-menu-luma
+```
