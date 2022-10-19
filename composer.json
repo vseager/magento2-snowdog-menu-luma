@@ -14,7 +14,7 @@
         "MIT"
     ],
     "require": {
-        "snowdog/module-menu": "~2.18.0"
+        "snowdog/module-menu": ">=2.18.0"
     },
     "autoload": {
         "files": [
