@@ -1,5 +1,10 @@
 # Luma support for Snowdog Menu for Magento 2
 
+[![Packagist](https://img.shields.io/packagist/v/vseager/magento2-snowdog-menu-luma?style=for-the-badge)](https://packagist.org/packages/vseager/magento2-snowdog-menu-luma)
+[![Packagist](https://img.shields.io/packagist/dt/vseager/magento2-snowdog-menu-luma?style=for-the-badge)](https://packagist.org/packages/vseager/magento2-snowdog-menu-luma)
+[![Packagist](https://img.shields.io/packagist/dm/vseager/magento2-snowdog-menu-luma?style=for-the-badge)](https://packagist.org/packages/vseager/magento2-snowdog-menu-luma)
+
+
 Seamlessly integrate the popular Snowdog Menu for Magento 2 with the Luma theme templates. No custom templates or CSS required. Just install, create a menu with the identifier `main`, populate and enjoy!
 
 Supports the following node types:
