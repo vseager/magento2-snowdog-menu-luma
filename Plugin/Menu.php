@@ -25,7 +25,12 @@ class Menu
     /**
      * @var CategoryFactory
      */
-    private $_categoryFactory; 
+    private $categoryFactory;
+	
+    /**
+     * @var ProductRepository
+     */
+    private $productRepository;
 
     /**
      * @var StoreManagerInterface
@@ -71,13 +76,13 @@ class Menu
         StoreManagerInterface $storeManager,
         UrlInterface $urlBuilder,
         CategoryFactory $categoryFactory,
-		ProductRepository $productRepository,
+        ProductRepository $productRepository,
         MenuRepositoryInterface $menuRepository,
         NodeRepositoryInterface $nodeRepository,
         NodeTypeProvider $nodeTypeProvider
     ) {
-        $this->_categoryFactory = $categoryFactory;
-        $this->_productRepository = $productRepository;
+        $this->categoryFactory = $categoryFactory;
+        $this->productRepository = $productRepository;
         $this->storeManager = $storeManager;
         $this->urlBuilder = $urlBuilder;
         $this->menuRepository = $menuRepository;
@@ -184,11 +189,11 @@ class Menu
             {
                 case 'category':
                 case 'category_child':
-                    $category = $this->_categoryFactory->create()->load($node->getContent()); //@todo update this to cater for all node types
+                    $category = $this->categoryFactory->create()->load($node->getContent()); //@todo update this to cater for all node types
                     $url = $category->getUrl();
                     break;
                 case 'product':
-                    $product = $this->_productRepository->getById($node->getContent());
+                    $product = $this->productRepository->getById($node->getContent());
                     $url = $product->getProductUrl();
                     break;
                 case 'cms_page':
@@ -281,7 +286,7 @@ class Menu
 
     public function getCategoryChildren($categoryId)
     {
-        $category = $this->_categoryFactory->create()->load($categoryId);
+        $category = $this->categoryFactory->create()->load($categoryId);
         return $category->getCategories($categoryId);
     }
 
