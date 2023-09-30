@@ -2,7 +2,7 @@
     "name": "vseager/magento2-snowdog-menu-luma",
     "description": "Use Snowdog Menu with standard Luma menu for Magento",
     "type": "magento2-module",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "authors": [
         {
             "name": "vseager",
